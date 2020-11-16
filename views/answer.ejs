@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/stylesheets/answer.css">
+</head>
+<body>
+  <h1 class="answer_title">アンケート集計ページ</h1>
+  
+  <div class="csv_box">
+    <a class="pref_btn3" href="/download">CSVにダウンロード
+    <img class="csv" src="./images/csv1.png" alt="csv"></a>
+  </div>
+
+  <div class="tb_box">
+    <h1 class="tb_title">
+        年代：行きたい山形エリア
+    </h1>
+    <table class="answer_tb">
+      <% values.forEach(function (value) { %>
+        <tr>
+          <td><%= value.age %>代：</td>
+          <td><%= value.Prefectures %>地方</td>
+        </tr>
+      <% }); %>
+  </div>
+</body>
+</html>

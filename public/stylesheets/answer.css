@@ -1,0 +1,63 @@
+body {
+  margin: 0px;
+  color: #410000;
+  font-family: "Helvetica Neue",
+  Arial,
+  "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans",
+  Meiryo,
+  sans-serif;
+}
+
+.answer_title {
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 3px solid #f0b200;
+  width: 1000px;
+  font-size: 50px;
+}
+
+.answer_tb {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 35px;
+  padding-top: 20px;
+}
+
+.tb_title {
+  width: 430px;
+  font-size: 35px;
+  font-weight: bold;
+  margin: -20px auto;
+  padding: 40px 0px 0px 173px;
+  text-align: center;
+}
+
+.csv_box {
+  padding-top: 20px;
+  text-align: center;
+}
+
+a.pref_btn3{
+  width: 280px;
+  display: inline-block;
+  line-height: 2;
+  padding: 3px 0px;
+  color: #fff;
+  background-color: rgb(95, 187, 33);
+  text-decoration: none;
+  border-radius: 15px;
+  box-shadow:0 6px 0 rgb(60, 121, 20);
+  transition: 0.2s;
+  font-size: 23px;
+}
+a.pref_btn3:hover{
+  box-shadow:0 4px 0 rgb(60, 121, 20);
+  margin: 2px 0 -2px 0; 
+}
+
+.csv {
+  width: 35px;
+  position: relative;
+  top: 7px;
+}

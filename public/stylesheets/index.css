@@ -37,10 +37,32 @@ a:hover{
 
 /* -------------------- body -------------------- */
 
+.returm_btn {
+  position: fixed;
+  bottom: 55px;
+  right: 10px;
+  font-size: 25px;
+  background-color:rgba(95, 187, 33, 0.616);
+  color: #FFF;
+  border-radius: 3px;
+  border: 0px;
+}
+.fade-enter-active{
+  transition: opacity .5s;
+}
+.fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter{
+  opacity: 0;
+}
+.fade-leave-to {
+  opacity: 0;
+}
+
 html {
   height: 100%;
 }
-
 
 body {
   margin: 0px;
@@ -315,8 +337,6 @@ a.pref_btn4:hover{
   box-shadow:0 4px 0 #c27400; 
   margin: 2px 0 -2px 0; 
 }
-
-
 
 .place_dialect {
   text-align: center;

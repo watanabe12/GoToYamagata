@@ -2,11 +2,12 @@ body {
   padding: 50px;
 }
 
-a{
+.bbtn_return {
+  width: 58px;
+  margin: 20px auto;
   text-decoration: none;
 }
 
-.btn_return {
-  width: 58px;
-  margin: 20px auto;
+.quiz_image {
+  width:250px;
 }

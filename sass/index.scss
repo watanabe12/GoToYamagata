@@ -1,4 +1,5 @@
 /* -------------------- header -------------------- */
+
 header {
   display: flex;
   width: 100%;
@@ -30,13 +31,14 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: #410000;
-}
 
-a:hover {
-  color: #a86d6d;
+  &:hover {
+    color: #a86d6d;
+  }
 }
 
 /* -------------------- body -------------------- */
+
 .returm_btn {
   position: fixed;
   bottom: 55px;
@@ -75,38 +77,38 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-}
 
-.fadeIn li {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 700px;
-  background-size: cover;
-  background-position: 50%;
-  background-repeat: none;
-  opacity: 0;
-  animation: anime 40s linear 0s infinite;
-}
+  li {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: none;
+    opacity: 0;
+    animation: anime 40s linear 0s infinite;
 
-.fadeIn li:nth-child(1) {
-  background-image: url(../images/sakura.jpeg);
-}
+    &:nth-child(1) {
+      background-image: url(../images/sakura.jpeg);
+    }
 
-.fadeIn li:nth-child(2) {
-  background-image: url(../images/ginzan.jpeg);
-  animation-delay: 10s;
-}
+    &:nth-child(2) {
+      background-image: url(../images/ginzan.jpeg);
+      animation-delay: 10s;
+    }
 
-.fadeIn li:nth-child(3) {
-  background-image: url(../images/sakura_osiro.jpeg);
-  animation-delay: 20s;
-}
+    &:nth-child(3) {
+      background-image: url(../images/sakura_osiro.jpeg);
+      animation-delay: 20s;
+    }
 
-.fadeIn li:nth-child(4) {
-  background-image: url(../images/zaou.jpeg);
-  animation-delay: 30s;
+    &:nth-child(4) {
+      background-image: url(../images/zaou.jpeg);
+      animation-delay: 30s;
+    }
+  }
 }
 
 @keyframes anime {
@@ -114,16 +116,20 @@ body {
     animation-timing-function: ease-in;
     opacity: 0;
   }
+
   10% {
     opacity: 1;
   }
+
   40% {
     animation-timing-function: ease-out;
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 0;
   }
@@ -147,7 +153,7 @@ body {
   width: 450px;
   height: 165px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.3);
+  background: hsla(0, 0%, 100%, 0.3);
 }
 
 .quiz_text {
@@ -173,11 +179,11 @@ a.btn {
   border-radius: 25px;
   box-shadow: 0 6px 0 #c27400;
   transition: 0.2s;
-}
 
-a.btn:hover {
-  box-shadow: 0 4px 0 #c27400;
-  margin: 2px 0 -2px 0;
+  &:hover {
+    box-shadow: 0 4px 0 #c27400;
+    margin: 2px 0 -2px 0;
+  }
 }
 
 .place_title {
@@ -215,20 +221,20 @@ a.btn:hover {
   border: solid 1px #555;
   font-size: 14px;
   background-color: #ffffff;
-}
 
-.balloon_box::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 0;
-  height: 0;
-  left: -6px;
-  bottom: 2px;
-  border-right: 20px solid #555;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  transform: rotate(-45deg);
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    left: -6px;
+    bottom: 2px;
+    border-right: 20px solid #555;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transform: rotate(-45deg);
+  }
 }
 
 .balloon_placement {
@@ -256,88 +262,90 @@ a.btn:hover {
   margin: 0 auto;
 }
 
-a.pref_btn1 {
-  display: inline-block;
-  padding: 1em 2em;
-  line-height: 1;
-  color: #fff;
-  background-color: #00b4ff;
-  text-decoration: none;
-  border-radius: 15px;
-  box-shadow: 0 6px 0 #007db3;
-  transition: 0.2s;
-  position: relative;
-  top: 193px;
-  right: 5px;
-  font-size: 23px;
-}
+a {
+  &.pref_btn1 {
+    display: inline-block;
+    padding: 1em 2em;
+    line-height: 1;
+    color: #fff;
+    background-color: rgb(0, 180, 255);
+    text-decoration: none;
+    border-radius: 15px;
+    box-shadow: 0 6px 0 rgb(0, 125, 179);
+    transition: 0.2s;
+    position: relative;
+    top: 193px;
+    right: 5px;
+    font-size: 23px;
 
-a.pref_btn1:hover {
-  box-shadow: 0 4px 0 #007db3;
-  margin: 2px 0 -2px 0;
-}
+    &:hover {
+      box-shadow: 0 4px 0 rgb(0, 125, 179);
+      margin: 2px 0 -2px 0;
+    }
+  }
 
-a.pref_btn2 {
-  display: inline-block;
-  padding: 1em 2em;
-  line-height: 1;
-  color: #fff;
-  background-color: #ff96ff;
-  text-decoration: none;
-  border-radius: 15px;
-  box-shadow: 0 6px 0 #c27400;
-  transition: 0.2s;
-  position: relative;
-  top: 620px;
-  right: 25px;
-  font-size: 23px;
-}
+  &.pref_btn2 {
+    display: inline-block;
+    padding: 1em 2em;
+    line-height: 1;
+    color: #fff;
+    background-color: rgb(255, 150, 255);
+    text-decoration: none;
+    border-radius: 15px;
+    box-shadow: 0 6px 0 #c27400;
+    transition: 0.2s;
+    position: relative;
+    top: 620px;
+    right: 25px;
+    font-size: 23px;
 
-a.pref_btn2:hover {
-  box-shadow: 0 4px 0 #c27400;
-  margin: 2px 0 -2px 0;
-}
+    &:hover {
+      box-shadow: 0 4px 0 #c27400;
+      margin: 2px 0 -2px 0;
+    }
+  }
 
-a.pref_btn3 {
-  display: inline-block;
-  padding: 1em 2em;
-  line-height: 1;
-  color: #fff;
-  background-color: #5fbb21;
-  text-decoration: none;
-  border-radius: 15px;
-  box-shadow: 0 6px 0 #3c7914;
-  transition: 0.2s;
-  position: relative;
-  top: 70px;
-  left: 675px;
-  font-size: 23px;
-}
+  &.pref_btn3 {
+    display: inline-block;
+    padding: 1em 2em;
+    line-height: 1;
+    color: #fff;
+    background-color: rgb(95, 187, 33);
+    text-decoration: none;
+    border-radius: 15px;
+    box-shadow: 0 6px 0 rgb(60, 121, 20);
+    transition: 0.2s;
+    position: relative;
+    top: 70px;
+    left: 675px;
+    font-size: 23px;
 
-a.pref_btn3:hover {
-  box-shadow: 0 4px 0 #3c7914;
-  margin: 2px 0 -2px 0;
-}
+    &:hover {
+      box-shadow: 0 4px 0 rgb(60, 121, 20);
+      margin: 2px 0 -2px 0;
+    }
+  }
 
-a.pref_btn4 {
-  display: inline-block;
-  padding: 1em 2em;
-  line-height: 1;
-  color: #fff;
-  background-color: #f8aa35;
-  text-decoration: none;
-  border-radius: 15px;
-  box-shadow: 0 6px 0 #c27400;
-  transition: 0.2s;
-  position: relative;
-  top: 385px;
-  left: 635px;
-  font-size: 23px;
-}
+  &.pref_btn4 {
+    display: inline-block;
+    padding: 1em 2em;
+    line-height: 1;
+    color: #fff;
+    background-color: #f8aa35;
+    text-decoration: none;
+    border-radius: 15px;
+    box-shadow: 0 6px 0 #c27400;
+    transition: 0.2s;
+    position: relative;
+    top: 385px;
+    left: 635px;
+    font-size: 23px;
 
-a.pref_btn4:hover {
-  box-shadow: 0 4px 0 #c27400;
-  margin: 2px 0 -2px 0;
+    &:hover {
+      box-shadow: 0 4px 0 #c27400;
+      margin: 2px 0 -2px 0;
+    }
+  }
 }
 
 .place_dialect {
@@ -423,7 +431,7 @@ a.pref_btn4:hover {
   font-weight: bold;
   font-size: 40px;
   color: rgba(0, 0, 0, 0);
-  text-shadow: 3px 3px 0 #f1c9c9;
+  text-shadow: 3px 3px 0 rgb(241, 201, 201);
   -webkit-text-stroke: 1px #888;
 }
 
@@ -443,11 +451,11 @@ a.btn2 {
   border-radius: 10px;
   box-shadow: 0 6px 0 #c27400;
   transition: 0.2s;
-}
 
-a.btn2:hover {
-  box-shadow: 0 4px 0 #c27400;
-  margin: 2px 0 -2px 0;
+  &:hover {
+    box-shadow: 0 4px 0 #c27400;
+    margin: 2px 0 -2px 0;
+  }
 }
 
 .bottom {
@@ -455,6 +463,7 @@ a.btn2:hover {
 }
 
 /* -------------------- footer -------------------- */
+
 footer {
   position: absolute;
   width: 100%;

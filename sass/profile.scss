@@ -8,10 +8,10 @@ a {
   font-size: 30px;
   text-decoration: none;
   color: #000000;
-}
 
-a:hover {
-  color: #a8a8a8;
+  &:hover {
+    color: #a8a8a8;
+  }
 }
 
 .prof {
@@ -41,18 +41,18 @@ a:hover {
 .job_details {
   padding: 10px;
   font-size: 28px;
-  text-align: center;
+  text-align: center; 
 }
 
 .skill {
   padding: 10px;
   font-size: 28px;
   text-align: center;
-}
 
-.skill_title {
-  text-align: center;
-  margin: 0 auto;
-  padding: 0 15px;
-  border-bottom: 3px solid #02ccff48;
+  &_title {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 15px;
+    border-bottom: 3px solid #02ccff48;
+  }
 }

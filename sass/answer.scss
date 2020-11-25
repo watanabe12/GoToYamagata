@@ -39,17 +39,17 @@ a.pref_btn3 {
   line-height: 2;
   padding: 3px 0px;
   color: #fff;
-  background-color: #5fbb21;
+  background-color: rgb(95, 187, 33);
   text-decoration: none;
   border-radius: 15px;
-  box-shadow: 0 6px 0 #3c7914;
+  box-shadow: 0 6px 0 rgb(60, 121, 20);
   transition: 0.2s;
   font-size: 23px;
-}
 
-a.pref_btn3:hover {
-  box-shadow: 0 4px 0 #3c7914;
-  margin: 2px 0 -2px 0;
+  &:hover {
+    box-shadow: 0 4px 0 rgb(60, 121, 20);
+    margin: 2px 0 -2px 0;
+  }
 }
 
 .csv {
